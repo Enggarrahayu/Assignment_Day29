@@ -1,0 +1,40 @@
+/* Navbar Styles */
+.navbar {
+  @apply fixed z-50 flex items-center justify-between w-full bg-yellow-800 px-4 py-2;
+}
+
+/* Logo */
+.navbar-logo {
+  @apply cursor-pointer w-24; 
+}
+
+
+/* Navigation Links */
+.navbar-menu {
+  @apply top-0 left-0 flex items-center justify-center w-full duration-300;
+}
+
+.navbar-list {
+  @apply flex-col items-center hidden md:flex md:flex-row gap-y-12 md:gap-8;
+}
+
+.navbar-item {
+  @apply block px-5 font-medium list-none md:inline-block;
+}
+
+.navbar-link {
+  @apply text-white no-underline;
+}
+
+/* Mobile Menu Button */
+.navbar-toggle {
+  @apply z-50 ml-auto text-xl cursor-pointer md:hidden sm:text-3xl;
+}
+
+.navbar-toggle-button {
+  @apply text-white focus:outline-none;
+}
+
+.navbar-toggle-icon {
+  @apply w-6 h-6;
+}

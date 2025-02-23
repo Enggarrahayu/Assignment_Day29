@@ -1,8 +1,12 @@
-function App() {
+import Navbar from "./components/Navbar"
+import logoIcon from "./assets/img/logo-3.png"; 
 
+function App() {
+  const logo = logoIcon
+  const menuList = ['Home', 'Menu', 'Gallery', 'Bite n Brew', 'Contact Us']
   return (
     <>
-      <h1>An empty react project</h1>
+      <Navbar logo = { logo } menuList = {menuList} />
     </>
   )
 }
