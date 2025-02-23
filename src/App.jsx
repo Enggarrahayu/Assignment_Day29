@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar"
 import logoIcon from "./assets/img/logo-3.png"; 
-import Footer from "./components/Navbar/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   const logo = logoIcon
