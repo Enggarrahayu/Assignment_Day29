@@ -1,0 +1,39 @@
+.footer-container {
+  @apply w-full py-5 text-center text-white bg-yellow-800 md:text-left;
+}
+
+.footer-content {
+  @apply px-10;
+}
+
+.footer-map {
+  @apply w-full;
+}
+
+.footer-grid {
+  @apply grid grid-cols-1 gap-6 px-10 mt-5 md:grid-cols-3;
+}
+
+.footer-logo {
+  @apply flex flex-col justify-center font-light md:justify-start;
+}
+
+.footer-logo img {
+  @apply px-4 py-2 mx-auto w-[140px];
+}
+
+.footer-copy {
+  @apply text-sm mt-14;
+}
+
+.footer-info {
+  @apply flex flex-col font-light;
+}
+
+.footer-info h2 {
+  @apply text-xl font-medium;
+}
+
+.footer-info span {
+  @apply mt-3;
+}
