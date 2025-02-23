@@ -1,0 +1,17 @@
+.contact-form-container {
+  @apply flex flex-col p-8 bg-white;
+}
+
+.contact-form-label {
+  @apply text-sm font-medium;
+}
+
+.contact-form-input {
+  @apply w-full px-4 py-2 border border-yellow-600 rounded-md shadow-sm outline-none 
+         focus:border-gray-300 focus:ring-2 focus:ring-yellow-600;
+}
+
+.contact-form-button {
+  @apply w-full px-6 py-2 font-semibold text-white transition bg-yellow-700 
+         rounded-md shadow-md hover:bg-yellow-800;
+}

@@ -1,0 +1,7 @@
+.contact-heading {
+  @apply text-3xl font-bold text-center text-yellow-800;
+}
+
+.contact-text {
+  @apply mt-2 text-center text-white;
+}
