@@ -1,3 +1,4 @@
+import { Button, TextField } from "@mui/material";
 import "./style.css";
 
 const ContactForm = () => {
@@ -5,32 +6,46 @@ const ContactForm = () => {
     <div className="contact-form-container">
       <form className="mt-10 space-y-6">
         {/* Name */}
-        <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="contact-form-label">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" className="contact-form-input" />
-        </div>
+        <TextField
+          fullWidth
+          label="Name"
+          variant="outlined"
+          placeholder="Enter your name"
+        />
 
         {/* Email */}
-        <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="contact-form-label">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" className="contact-form-input" />
-        </div>
+        <TextField
+          fullWidth
+          type="email"
+          label="Email"
+          variant="outlined"
+          placeholder="Enter your email"
+        />
 
         {/* Phone Number */}
-        <div className="flex flex-col gap-2">
-          <label htmlFor="phone" className="contact-form-label">Phone Number</label>
-          <input type="tel" id="phone" placeholder="Enter your phone number" className="contact-form-input" />
-        </div>
+        <TextField
+          fullWidth
+          type="tel"
+          label="Phone Number"
+          variant="outlined"
+          placeholder="Enter your phone number"
+        />
 
         {/* Message */}
-        <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="contact-form-label">Message</label>
-          <textarea id="message" rows="6" className="contact-form-input"></textarea>
-        </div>
+        <TextField
+          fullWidth
+          multiline
+          rows={6}
+          label="Message"
+          variant="outlined"
+          placeholder="Enter your message"
+        />
 
         {/* Submit Button */}
         <div className="flex justify-center">
-          <button type="submit" className="contact-form-button">SEND</button>
+          <Button variant="contained" type="submit" className="contact-form-button">
+            SEND
+          </Button>
         </div>
       </form>
     </div>
